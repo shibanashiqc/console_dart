@@ -54,6 +54,11 @@ Step 4: How to run on terminal:
  console file iam using the name of the folder that i created in the root of my project. you can use any name you want.
  
  
+```dart
+dart console -c my_widget -s
+dart console -c my_widget -f
+```dart
+ 
 
 ## Additional information
 
