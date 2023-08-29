@@ -1,0 +1,5 @@
+import 'package:console_dart/console_dart.dart';
+
+void main(List<String> arguments){
+  load(arguments);
+}
