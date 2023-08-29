@@ -28,7 +28,8 @@ start using the package.
 Console Dart:  List the steps needed to use the package.
 
 Step 1: Add this to your package's pubspec.yaml file:
-Step 2: Create a folder console or any name you want in the root of your project. no need add .dart file extension.
+
+Step 2: Create a file in in root not in lib folder and name it console or any name you want. i suggest you to use console. don't need add .dart extension.
 
 Step 3: Replace the content of the file with the following code:
 
