@@ -36,11 +36,11 @@ void load(List<String> arguments) {
   print('Creating file $name');
     
   if (stl) {
-    final stubs = File('lib/stub/stateless.stub').readAsStringSync();
+    final stubs = File('stub/stateless.stub').readAsStringSync();
     CreateFile.createFile(name, stubs);
     print('Stateless widget created successfully PATH: $name');
   }else if (stf) {
-    final stubs = File('lib/stub/statefull.stub').readAsStringSync();
+    final stubs = File('stub/statefull.stub').readAsStringSync();
     CreateFile.createFile(name, stubs);
     print('Statefull widget created successfully PATH: $name');
   }else{
