@@ -1,5 +1,5 @@
 name: console_dart
-description: A new Flutter package project.
+description: A package for create files in command line
 version: 0.0.1
 repository: https://github.com/shibanashiqc/console_dart
 homepage:
