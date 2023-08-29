@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 library console_dart;
 
 import 'dart:io';
@@ -36,13 +38,13 @@ void load(List<String> arguments) {
   if (stl) {
     final stubs = File('lib/stub/stateless.stub').readAsStringSync();
     CreateFile.createFile(name, stubs);
-    print('Stateless widget created successfully PATH: ${name}');
+    print('Stateless widget created successfully PATH: $name');
   }else if (stf) {
     final stubs = File('lib/stub/statefull.stub').readAsStringSync();
     CreateFile.createFile(name, stubs);
-    print('Statefull widget created successfully PATH: ${name}');
+    print('Statefull widget created successfully PATH: $name');
   }else{
-    print('Please provide a type of widget');
+    print('Please provide a type of widget'); 
   }
   
   }else{
