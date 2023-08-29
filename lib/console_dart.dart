@@ -1,8 +1,6 @@
 library console_dart;
 
-import 'dart:convert';
 import 'dart:io';
-
 import 'package:args/args.dart';
 
 void load(List<String> arguments) {
