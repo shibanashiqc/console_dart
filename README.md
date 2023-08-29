@@ -11,29 +11,50 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Console Dart: A package to help you create files and folders in your project with a single command.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Console Dart: Create stateless and stateful widgets with a single command.
+
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
+Console Dart: List prerequisites and provide or point to information on how to
 start using the package.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Console Dart:  List the steps needed to use the package.
+
+Step 1: Add this to your package's pubspec.yaml file:
+Step 2: Create a folder console or any name you want in the root of your project. no need add .dart file extension.
+
+Step 3: Replace the content of the file with the following code:
+
 
 ```dart
-const like = 'sample';
+import 'package:console_dart/console_dart.dart';
+
+void main(List<String> arguments){
+  load(arguments);
+}
+
 ```
+
+Step 4: How to run on terminal:
+
+ Usage: create_file [options] <name> stl|stf
+    Options:
+      -c, --create-file    Create a file
+      -s, --stl            Create a stateless widget
+      -f, --stf            Create a statefull widget
+      
+ Example: dart console -c my_widget -s, dart console -c my_widget -f
+ console file iam using the name of the folder that i created in the root of my project. you can use any name you want.
+ 
+ 
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Console Dart: If you want to contribute to this project, please contact me at: [email](mailto:shibanashiq697@gmail.com)
