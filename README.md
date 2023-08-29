@@ -57,7 +57,7 @@ Step 4: How to run on terminal:
 ```dart
 dart console -c my_widget -s
 dart console -c my_widget -f
-```dart
+```
  
 
 ## Additional information
