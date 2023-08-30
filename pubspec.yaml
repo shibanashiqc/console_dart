@@ -1,6 +1,6 @@
 name: console_dart
 description: A package for create files in command line
-version: 0.0.2
+version: 0.0.3
 repository: https://github.com/shibanashiqc/console_dart
 homepage:
 
@@ -27,8 +27,8 @@ flutter:
 
   # To add assets to your package, add an assets section, like this:
   # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  #   - packages/console_dart/assets/stub/statefull.stub
+  #   - packages/console_dart/assets/stub/stateless.stub
   #
   # For details regarding assets in packages, see
   # https://flutter.dev/assets-and-images/#from-packages

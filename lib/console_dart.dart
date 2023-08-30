@@ -1,9 +1,10 @@
-// ignore_for_file: avoid_print
+// ignore_for_file: avoid_print, prefer_interpolation_to_compose_strings
 
 library console_dart;
 
 import 'dart:io';
 import 'package:args/args.dart';
+
 
 void load(List<String> arguments) {
   try {
@@ -34,14 +35,41 @@ void load(List<String> arguments) {
   if (name != null) {
     
   print('Creating file $name');
-    
+  
+  //publish stub file
+  
   if (stl) {
-    final stubs = File('stub/stateless.stub').readAsStringSync();
-    CreateFile.createFile(name, stubs);
+    const statelessStub = '''import 'package:flutter/material.dart';
+
+  class WIDGET extends StatelessWidget {
+    const WIDGET ({super.key});
+
+    @override
+    Widget build(BuildContext context) {
+      return Container();
+    }
+  }''';
+    
+    CreateFile.createFile(name, statelessStub);
     print('Stateless widget created successfully PATH: $name');
   }else if (stf) {
-    final stubs = File('stub/statefull.stub').readAsStringSync();
-    CreateFile.createFile(name, stubs);
+    
+    const statefullStub = '''import 'package:flutter/material.dart';
+
+class WIDGET extends StatefulWidget {
+  const WIDGET({super.key});
+
+  @override
+  State<WIDGET> createState() => _WIDGETState();
+}
+
+class _WIDGETState extends State<WIDGET> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}''';
+    CreateFile.createFile(name, statefullStub);
     print('Statefull widget created successfully PATH: $name');
   }else{
     print('Please provide a type of widget'); 

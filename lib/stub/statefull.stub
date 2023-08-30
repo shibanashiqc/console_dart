@@ -1,0 +1,15 @@
+import 'package:flutter/material.dart';
+
+class Stateful extends StatefulWidget {
+  const Stateful({super.key});
+
+  @override
+  State<Stateful> createState() => _StatefulState();
+}
+
+class _StatefulState extends State<Stateful> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
