@@ -58,6 +58,10 @@ Step 4: How to run on terminal:
 ```dart
 dart console -c my_widget -s
 dart console -c my_widget -f
+
+dart console -c views/page/sample -s
+dart console -c views/page/sample -f
+
 ```
  
 
