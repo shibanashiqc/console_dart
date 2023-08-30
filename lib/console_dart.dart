@@ -24,8 +24,12 @@ void load(List<String> arguments) {
     if (arguments.contains('-d') || arguments.contains('--delete')) {
       final path = '${Directory.current.path}/lib/';
       final file = File('$path${arguments[arguments.length - 1]}.dart');
+      if(file.existsSync()){
       file.deleteSync(recursive: true);
       print('File deleted successfully PATH: $path');
+      }else{
+        print('File does not exist');
+      }
       return;
     }
 
