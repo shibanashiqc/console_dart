@@ -63,6 +63,13 @@ dart console -c views/page/sample -s
 dart console -c views/page/sample -f
 
 ```
+
+## For delete file
+
+```dart
+dart console -d my_widget
+dart console -d views/page/sample
+```
  
 
 ## Additional information
