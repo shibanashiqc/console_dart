@@ -1,6 +1,6 @@
 name: console_dart
-description: A package for create files in command line. easy to create stateless and statefull widget in flutter in command line. This package is inspired by laravel artisan command. This package is under development. So, please don't use it in production. If you want to contribute, you are welcome. Thank you.
-version: 0.0.5
+description:  A package for create files in command line. easy to create stateless and statefull widget in flutter in command line. This package is inspired by laravel artisan command.
+version: 0.0.6
 repository: https://github.com/shibanashiqc/console_dart
 homepage:
 
