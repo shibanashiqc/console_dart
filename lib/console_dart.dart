@@ -7,6 +7,7 @@ import 'package:args/args.dart';
 
 void load(List<String> arguments) {
   try {
+    
     if (arguments.contains('--help')) {
       print('''
     Usage: create_file [options] <name> stl|stf
@@ -14,7 +15,17 @@ void load(List<String> arguments) {
       -c, --create-file    Create a file
       -s, --stl            Create a stateless widget
       -f, --stf            Create a statefull widget
+      -d, --delete         Delete a file
     ''');
+      return;
+    }
+    
+   
+    if (arguments.contains('-d') || arguments.contains('--delete')) {
+      final path = '${Directory.current.path}/lib/';
+      final file = File('$path${arguments[arguments.length - 1]}.dart');
+      file.deleteSync(recursive: true);
+      print('File deleted successfully PATH: $path');
       return;
     }
 
